@@ -14,6 +14,10 @@
   --font-headline: "Racing Sans One";
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: Arial;
@@ -94,6 +98,23 @@ body {
 
 .hero-banner-content {
   padding: 40px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+main .container {
+  padding: 25px 0px;
+}
+
+footer {
+  background-color: pink;
+}
+
+.contact-information {
+  padding: 50px 20px;
 }
 
 @media screen and (max-width: 600px) {
