@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <div class="topnav" id="myTopnav">
+        <div class="dropdown">
+          <button class="dropbtn">
+            Minä
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Koulu</a>
+            <a href="#">Työ</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Vapaaehtoistoiminta
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Tutor</a>
+            <a href="#">Taitajat</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Projektit
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
+        <a href="#about">Yhteystiedot</a>
+        <a
+          href="javascript:void(0);"
+          style="font-size: 15px"
+          class="icon"
+          onclick="myFunction()"
+          >&#9776;</a
+        >
+      </div>
+
+      <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+      </script>
+
+      <div class="hero-banner">
+        <div class="hero-banner-content">
+          <h1>Portfolio</h1>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <h2>Minä</h2>
+      <h2>Vapaaehtoistoiminta</h2>
+      <h2>Projektit</h2>
+    </main>
+    <footer>
+      <div class="contact-information">
+        <h2>Yhteystiedot</h2>
+        <br />
+        <p>Kaisu Tuominen</p>
+        <br />
+        <p>Mailatie 20 F, 01280 Vantaa</p>
+        <br />
+        <p>Puh. 045 6076733</p>
+        <br />
+        <p>tuominenkaisu3@gmail.com</p>
+        <br />
+      </div>
+    </footer>
+  </body>
+</html>
