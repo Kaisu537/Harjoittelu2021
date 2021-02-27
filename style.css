@@ -6,12 +6,11 @@
 }
 
 :root {
-  --primary-color: #012326;
+  --primary-color: #333;
   --font-highlight: #f205b3;
   --font-color: #012840;
   --light-color: #fff;
-  --font-normal: "Roboto";
-  --font-headline: "Racing Sans One";
+  --hover-color: #ddd;
 }
 
 html {
@@ -25,7 +24,7 @@ body {
 
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: var(--primary-color);
 }
 
 .topnav a {
@@ -51,7 +50,7 @@ body {
   font-size: 17px;
   border: none;
   outline: none;
-  color: white;
+  color: var(--light-color);
   padding: 14px 16px;
   background-color: inherit;
   font-family: inherit;
@@ -61,7 +60,7 @@ body {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: var(--light-color);
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -69,7 +68,7 @@ body {
 
 .dropdown-content a {
   float: none;
-  color: black;
+  color: var(--font-color);
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -78,26 +77,44 @@ body {
 
 .topnav a:hover,
 .dropdown:hover .dropbtn {
-  background-color: #555;
-  color: white;
+  background-color: pink;
+  color: var(--light-color);
 }
 
 .dropdown-content a:hover {
-  background-color: #ddd;
-  color: black;
+  background-color: var(--hover-color);
+  color: var(--font-color);
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
-.hero-banner {
-  background-color: red;
-  min-height: 300px;
+header .hero-banner {
+  min-height: 350px;
+  background: url(mariya-pampova-sM2gS6hwDzM-unsplash.jpg) no-repeat center
+    center/cover;
+  position: relative;
+}
+
+header .hero-banner:after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-color: var(--primary-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
 }
 
 .hero-banner-content {
-  padding: 40px;
+  max-width: 200px;
+  padding-top: 145px;
+  margin: auto;
+  color: var(--light-color);
+  position: relative;
+  z-index: 1;
 }
 
 .container {
@@ -109,12 +126,18 @@ main .container {
   padding: 25px 0px;
 }
 
+main {
+  padding: 0px 20px;
+  color: var(--font-color);
+}
+
 footer {
-  background-color: pink;
+  background-color: var(--primary-color);
 }
 
 .contact-information {
   padding: 50px 20px;
+  color: var(--light-color);
 }
 
 @media screen and (max-width: 600px) {
